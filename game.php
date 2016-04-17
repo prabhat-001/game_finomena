@@ -15,13 +15,17 @@ for (i = 0; i < buttons.length; i++) {
 
 }
 
+// document.getElementById("demo3").style.color=document.getElementById("demo3").innerHTML;
+
 }
+
 
 </script> 
 
-<body onload=givecolors()>
+<body onload=givecolors(),myFunction()>
   <p id="demo1"></p>
   <p id="demo2"></p>
+  <p id="demo3"></p>
 
 
 <script>
@@ -37,6 +41,11 @@ function myFunction() {
         document.getElementById("demo2").innerHTML =
         "Player2: " + person2 ;
     }
+    var bgcolorlist=new Array( "#DFDFFF", "#FFFFBF", "#80FF80", "#EAEAFF", "#C9FFA8", "#F7F7F7", "#FFFFFF", "#DDDD00"," #0000FF","  #DC143C","  #006400","#E9967A","  #00CED1","#FF00FF","  #4B0082","  #87CEFA","#FF00FF","#FF4500")
+    var colorplayer1=bgcolorlist[Math.floor(Math.random()*bgcolorlist.length)]
+    document.getElementById("demo3").innerHTML =colorplayer1;
+    document.getElementById("demo3").style.color = document.getElementById("demo3").innerHTML;
+    
 
 }
 </script>
@@ -66,8 +75,28 @@ function myFunction() {
 
        <!-- <button class="button" onclick=red()>Button</button>
        <button class="button" onclick=red()>Button</button> -->
-       <button class="button" onclick="xxx(this, 'red')">Button</button>
-       <button class="button" onclick="xxx(this, 'red')">Button</button>
+       <button class="button" onclick="xxx(this)">Button</button>
+       <button class="button" onclick="xxx(this)">Button</button>
+       <button class="button" onclick="xxx(this)">Button</button>
+       <button class="button" onclick="xxx(this)">Button</button>
+       <button class="button" onclick="xxx(this)">Button</button>
+       <button class="button" onclick="xxx(this)">Button</button>
+       <button class="button" onclick="xxx(this)">Button</button>
+       <button class="button" onclick="xxx(this)">Button</button>
+       <button class="button" onclick="xxx(this)">Button</button>
+       <button class="button" onclick="xxx(this)">Button</button>
+       <button class="button" onclick="xxx(this)">Button</button>
+       <button class="button" onclick="xxx(this)">Button</button>
+       <button class="button" onclick="xxx(this)">Button</button>
+       <button class="button" onclick="xxx(this)">Button</button>
+       <button class="button" onclick="xxx(this)">Button</button>
+       <button class="button" onclick="xxx(this)">Button</button>
+       <button class="button" onclick="xxx(this)">Button</button>
+       <button class="button" onclick="xxx(this)">Button</button>
+       
+       
+
+       <!-- <button class="button" onclick="xxx(this, 'red')">Button</button>
 
        <button class="button" onclick="xxx(this, 'red')">Button</button>
        <button class="button" onclick="xxx(this, 'red')">Button</button>
@@ -82,18 +111,18 @@ function myFunction() {
        <button class="button" onclick="xxx(this, 'red')">Button</button>
        <button class="button" onclick="xxx(this, 'red')">Button</button>
        <button class="button" onclick="xxx(this, 'red')">Button</button>
-       <button class="button" onclick="xxx(this, 'red')">Button</button>
+       <button class="button" onclick="xxx(this, 'red')">Button</button> -->
        </div>
 </div>
  <script>
-function xxx(elmnt,clr) {
-    elmnt.style.backgroundColor = clr;
-    var start = new Date().getTime();
-  for (var i = 0; i < 1e7; i++) {
-    if ((new Date().getTime() - start) > 2000){
-      break;
-    }
-  }
+function xxx(elmnt) {
+    elmnt.style.backgroundColor = document.getElementById("demo3").innerHTML;
+  //   var start = new Date().getTime();
+  // for (var i = 0; i < 1e7; i++) {
+  //   if ((new Date().getTime() - start) > 2000){
+  //     break;
+  //   }
+  // }
 }
 </script>
 
