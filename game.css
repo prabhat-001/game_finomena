@@ -1,12 +1,12 @@
 .button-container {
-    width: 1100px;
+    width: 1000px;
     /*background: gray;*/
     overflow-y: auto;
 }
 
 .button   {
-    width: 150px;
-    height: 140px;
+    width: 100px;
+    height: 100px;
     float: left;
     /*//background: lightgrey;*/   
     margin: 5px;
@@ -31,5 +31,33 @@
 
 
 }
+h1{
+    font-size:18px;
+}
+h1 span { font-size:18px; 
+}
+
+#countdown_box {
+    position:absolute;
+    top:32%;
+    left:32%;
+    width:300px;
+    border:3px solid blue;
+    padding:70px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    }
+    #countdown_title {
+    font-family: tahoma;
+    font-weight: bold;
+    colour: blue;
+    font-size: 18px;
+    }
+    #countdown_div {
+    font-family: tahoma;
+    font-weight: bold;
+    font-size: 56px;
+    }
 
     
