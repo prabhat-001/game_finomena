@@ -10,4 +10,5 @@ URL of game deployed : http://www.prabhat001.esy.es
 5)real time score update
 6)freeze game after each attempt
 7)check 7.1)..
+7.2)
 
