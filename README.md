@@ -1,5 +1,5 @@
 # game_finomena
-This is for full-stack domain........
+This is for full-stack domain(feature)
 
 URL of game deployed : http://www.prabhat001.esy.es
 
